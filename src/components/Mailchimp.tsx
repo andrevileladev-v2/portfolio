@@ -128,8 +128,7 @@ export const Mailchimp = ({ newsletter }: { newsletter: NewsletterProps }) => {
         }}
         action={mailchimp.action}
         method="post"
-        id="mc-embedded-subscribe-form"
-        name="mc-embedded-subscribe-form"
+        id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank"
       >
         <Flex id="mc_embed_signup_scroll" fillWidth maxWidth={24} mobileDirection="column" gap="8">
           <Input
@@ -168,14 +167,14 @@ export const Mailchimp = ({ newsletter }: { newsletter: NewsletterProps }) => {
             <input
               type="text"
               readOnly
-              name="b_c1a5a210340eb6c7bff33b2ba_0462d244aa"
+              name="b_ddd79fcfed36acd281cdf019e_a284c16081"
               tabIndex={-1}
               value=""
             />
           </div>
           <div className="clear">
             <Flex height="48" vertical="center">
-              <Button id="mc-embedded-subscribe" value="Subscribe" size="m" fillWidth>
+              <Button type="submit" id="mc-embedded-subscribe" value="Subscribe" size="m" fillWidth>
                 Subscribe
               </Button>
             </Flex>
