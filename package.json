@@ -4,8 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "postbuild": "node ./node_modules/@netlify/next/dist/index.js"
+    "start": "next start"
   },
   "dependencies": {
     "@floating-ui/react-dom": "^2.1.2",
