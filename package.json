@@ -3,10 +3,9 @@
   "version": "2.0.0",
   "scripts": {
     "dev": "next dev",
-    "export": "next export",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "postbuild": "node ./node_modules/@netlify/next/dist/index.js"
   },
   "dependencies": {
     "@floating-ui/react-dom": "^2.1.2",
