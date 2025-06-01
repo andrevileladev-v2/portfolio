@@ -98,7 +98,7 @@ const display = {
 };
 
 const mailchimp = {
-  action: "https://url/subscribe/post?parameters",
+  action: "https://app.us4.list-manage.com/subscribe/post?u=ddd79fcfed36acd281cdf019e&amp;id=a284c16081&amp;f_id=00b2d1e7f0",
   effects: {
     mask: {
       cursor: true,
