@@ -56,8 +56,8 @@ const home = {
   headline: <>Construindo sistemas web escaláveis com código limpo e design sólido</>,
   featured: {
     display: true,
-    title: <>Projeto recente: <strong className="ml-4">BEEEDU</strong></>,
-    href: "https://github.com/felipinhobgtom/beeedu",
+    title: <>Abrir <strong className="ml-4">Terminal</strong></>,
+    href: "https://oandrevilela-low.netlify.app",
   },
   subline: (
     <>
