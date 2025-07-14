@@ -66,6 +66,7 @@ const Logo: React.FC<LogoProps> = ({
           src={iconSrc}
           width={parseInt(sizeMap[size])}
           height={parseInt(sizeMap[size])}
+          priority
         />
       )}
       {wordmark && !wordmarkSrc && (
@@ -86,6 +87,7 @@ const Logo: React.FC<LogoProps> = ({
           src={wordmarkSrc}
           width={parseInt(sizeMap[size])}
           height={parseInt(sizeMap[size])}
+          priority
         />
       )}
     </>

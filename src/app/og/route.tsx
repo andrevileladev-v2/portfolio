@@ -2,6 +2,8 @@ import { ImageResponse } from "next/og";
 import { baseURL } from "@/app/resources";
 import { person } from "@/app/resources/content";
 
+// Edge runtime is required for dynamic image generation
+// This disables static generation but is necessary for ImageResponse
 export const runtime = "edge";
 
 export async function GET(request: Request) {
@@ -53,6 +55,7 @@ export async function GET(request: Request) {
             gap: "5rem",
           }}
         >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={baseURL + person.avatar}
             alt={`Avatar de ${person.name}`}
