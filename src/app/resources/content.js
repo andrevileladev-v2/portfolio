@@ -56,13 +56,14 @@ const home = {
   headline: <>Construindo sistemas web escaláveis com código limpo e design sólido</>,
   featured: {
     display: true,
-    title: <>Projeto recente: <strong className="ml-4">BEEEDU</strong></>,
-    href: "https://github.com/felipinhobgtom/beeedu",
+    title: <>Projeto recente: <strong className="ml-4">MedSenior Maratona</strong></>,
+    href: "/work/medsenior-maratona-inovacao",
   },
   subline: (
     <>
       Sou André Vilela, desenvolvedor full stack focado em criar sistemas inteligentes e escaláveis usando React e Node.js.<br />
-      Quando não estou programando, ajudo empresas a crescerem através da tecnologia na Tática Júnior.
+      Quando não estou programando, ajudo empresas a crescerem através da tecnologia na Tática Júnior.<br />
+      Recentemente participei de eventos de inovação como maratona da MedSenior com SEBRAE e eduHackathon da Beedu.
     </>
   ),
 };
@@ -109,6 +110,26 @@ const about = {
         ],
         images: [],
       },
+      {
+        company: "MedSenior - Maratona de Inovação",
+        timeframe: "2025",
+        role: "Participante",
+        achievements: [
+          <>Participação em maratona de inovação em conjunto com SEBRAE para desenvolvimento de soluções tecnológicas.</>,
+          <>Desenvolvimento de aplicação focada em melhorar a experiência de usuários da MedSenior.</>,
+        ],
+        images: [],
+      },
+      {
+        company: "Beedu - eduHackathon",
+        timeframe: "2025",
+        role: "Participante",
+        achievements: [
+          <>Participação no eduHackathon da Beedu para criação de soluções inovadoras em educação.</>,
+          <>Desenvolvimento de projeto focado em melhorar a experiência educacional através da tecnologia.</>,
+        ],
+        images: [],
+      },
     ],
   },
   studies: {
@@ -144,6 +165,16 @@ const about = {
         description: <>Integração com API oficial do WhatsApp Business e armazenamento de arquivos na Azure Blob.</>,
         images: [],
       },
+      {
+        title: "Hackathons & Inovação",
+        description: <>Experiência em maratonas de inovação e hackathons, desenvolvendo soluções rápidas e eficazes para problemas reais.</>,
+        images: [],
+      },
+      {
+        title: "Design Thinking & UX",
+        description: <>Aplicação de metodologias ágeis e design thinking para criar experiências de usuário intuitivas e acessíveis.</>,
+        images: [],
+      },
     ],
   },
 };
@@ -151,61 +182,58 @@ const about = {
 const blog = {
   path: "/blog",
   label: "Blog",
-  title: "Escrevendo sobre desenvolvimento, negócios e tecnologia...",
-  description: `Leia sobre o que André Vilela tem aprendido e construído.`,
+  title: "Escrevendo sobre desenvolvimento, hackathons e inovação...",
+  description: `Leia sobre hackathons, desenvolvimento full stack, eventos de tecnologia e o que André Vilela tem aprendido e construído.`,
 };
 
 const work = {
   path: "/work",
   label: "Projetos",
   title: "Projetos – André Vilela",
-  description: "Sistemas e aplicações construídos com React, Node.js e MongoDB",
+  description: "Sistemas, aplicações e participações em hackathons construídos com React, Node.js e MongoDB",
 };
 
 const gallery = {
   path: "/gallery",
   label: "Galeria",
-  title: `Galeria de fotos – ${person.name}`,
-  description: `Uma coleção de fotos de ${person.name}`,
+  title: `Galeria de fotos e vídeos – ${person.name}`,
+  description: `Uma coleção de fotos e vídeos de ${person.name}`,
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "imagem",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "imagem",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "imagem",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "imagem",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "imagem",
+      src: "/images/gallery/equipe hackathon seniorIA.jpg",
+      alt: "Equipe hackathon SeniorIA",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "imagem",
+      src: "/images/gallery/esx.jpg",
+      alt: "ESX - Evento de tecnologia",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/palco esx.jpg",
+      alt: "Palco do ESX",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/premiacao.jpg",
+      alt: "Premiação",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "imagem",
-      orientation: "vertical",
+      src: "/images/gallery/grupo maratona.jpg",
+      alt: "Grupo da maratona",
+      orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "imagem",
+      src: "/images/gallery/grupo maratona 2.jpg",
+      alt: "Grupo da maratona 2",
+      orientation: "vertical",
+    },
+  ],
+  videos: [
+    {
+      src: "/videos/hackathon medsenior.mp4",
+      alt: "Hackathon MedSenior",
       orientation: "vertical",
     },
   ],
