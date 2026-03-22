@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Full Stack Design Engineer", // e.g., "Software Engineer", "Product Designer"
+  role: "Full Stack Developer", // e.g., "Software Engineer", "Product Designer"
   avatar: "/images/avatar.jpg",
   email: "andrevileladev@gmail.com",
   location: "America/Sao_Paulo", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -69,7 +69,7 @@ const home = {
 };
 
 const about = {
-  path: "/about",
+  path: "/",
   label: "Sobre",
   title: "Sobre – André Vilela",
   description: "Conheça André Vilela, Desenvolvedor Full Stack de Guarapari, ES",
@@ -81,8 +81,8 @@ const about = {
     title: "Introdução",
     description: (
       <>
-        André Vilela é um desenvolvedor full stack de Guarapari apaixonado por construir sistemas web reais usando React e Node.js.
-        Possui experiência com APIs, MongoDB, Azure Blob, integrações com WhatsApp e atualmente é Diretor de Projetos na Tática Júnior.
+        André Vilela sou desenvolvedor full stack de Guarapari apaixonado por construir sistemas web reais usando React e Node.js.
+        Possuo experiência com APIs, MongoDB, Azure Blob, integrações com WhatsApp.
       </>
     ),
   },
@@ -91,8 +91,18 @@ const about = {
     title: "Experiência Profissional",
     experiences: [
       {
+        company: "Web Líder",
+        timeframe: "2025 - Presente",
+        role: "Técnico em Desenvolvimento de Sistemas",
+        achievements: [
+          <>Desenvolvimento de sistemas web para clientes diversos.</>,
+          <>Manutenção e atualização de sistemas existentes.</>,
+        ],
+        images: [],
+      },
+      {
         company: "Tática Júnior",
-        timeframe: "2024 - Presente",
+        timeframe: "2024 - 2026",
         role: "Diretor de Projetos",
         achievements: [
           <>Liderança na estruturação da área de projetos, reuniões semanais e organização da equipe técnica.</>,
@@ -109,27 +119,7 @@ const about = {
           <>Desenvolvimento de dashboards com geração de PDFs e bots para WhatsApp utilizando a API da Meta.</>,
         ],
         images: [],
-      },
-      {
-        company: "MedSenior - Maratona de Inovação",
-        timeframe: "2025",
-        role: "Participante",
-        achievements: [
-          <>Participação em maratona de inovação em conjunto com SEBRAE para desenvolvimento de soluções tecnológicas.</>,
-          <>Desenvolvimento de aplicação focada em melhorar a experiência de usuários da MedSenior.</>,
-        ],
-        images: [],
-      },
-      {
-        company: "Beedu - eduHackathon",
-        timeframe: "2025",
-        role: "Participante",
-        achievements: [
-          <>Participação no eduHackathon da Beedu para criação de soluções inovadoras em educação.</>,
-          <>Desenvolvimento de projeto focado em melhorar a experiência educacional através da tecnologia.</>,
-        ],
-        images: [],
-      },
+      }
     ],
   },
   studies: {
@@ -229,11 +219,36 @@ const gallery = {
       alt: "Grupo da maratona 2",
       orientation: "vertical",
     },
+    {
+      src: "/images/gallery/equipe lider.jpeg",
+      alt: "Equipe lider",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/ifes.jpeg",
+      alt: "ifes",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/ifes auditorio.jpeg",
+      alt: "ifes",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/tatica.jpeg",
+      alt: "tática",
+      orientation: "vertical",
+    }
   ],
   videos: [
     {
       src: "/videos/hackathon medsenior.mp4",
       alt: "Hackathon MedSenior",
+      orientation: "vertical",
+    },
+    {
+      src: "/videos/tatica.mp4",
+      alt: "tática",
       orientation: "vertical",
     },
   ],
