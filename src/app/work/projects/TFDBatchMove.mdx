@@ -1,0 +1,78 @@
+---
+title: "Otimização de Performance em Sistema Delphi com TFDBatchMove"
+publishedAt: "2026-03-22"
+images:
+  - "/images/gallery/delphiNoComputador.jpg"
+---
+
+# Otimização de Performance em Sistema Delphi com TFDBatchMove
+
+## Sobre o Contexto
+
+Recentemente tive uma experiência muito interessante trabalhando com um sistema legado em Delphi — um daqueles cenários clássicos onde uma mudança simples gera um impacto enorme 🚀
+
+Na empresa, temos um instalador responsável por algumas tarefas críticas:
+
+- **Download de dados da nuvem para banco local**
+- **Instalação e configuração do sistema**
+- **Recuperação de dados via XML da SEFAZ (notas fiscais)**
+
+## O Problema
+
+Até então, o processo de carga de dados era feito utilizando `TFDQuery` com inserts linha a linha.
+
+Na prática, isso gerava um grande gargalo de performance:
+
+- Processos que levavam **horas ou até um dia inteiro**
+- Necessidade de **paralisar o uso da máquina do cliente**
+- Execuções fora do horário comercial
+- Operações realizadas até em finais de semana para evitar impacto em mercados
+
+## A Solução
+
+Buscando uma abordagem mais eficiente, implementei o uso do `TFDBatchMove`, recurso do FireDAC voltado para processamento em lote de dados.
+
+A principal mudança foi sair de um modelo de inserção linha a linha para um processamento em batch, reduzindo drasticamente o overhead de operações individuais no banco.
+
+## Resultado
+
+O ganho foi imediato e expressivo:
+
+- ⚡ Redução de **horas para minutos (ou até segundos)**
+- 📉 Menor impacto na operação do cliente
+- 🔒 Processo mais estável
+- 🚀 Performance significativamente melhor
+
+## Aprendizados
+
+Essa experiência reforçou um ponto muito importante:
+
+> O ganho muitas vezes não está na regra de negócio, mas na forma como processamos os dados.
+
+Muitas vezes buscamos soluções complexas quando:
+
+- Já existem ferramentas mais eficientes disponíveis
+- Não exploramos totalmente os recursos da stack atual
+- Pequenas mudanças podem gerar grandes ganhos
+
+## Referências
+
+📺 Canal recomendado sobre Delphi:
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/3Esnn7DJ4ww" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
+📚 Documentação oficial do TFDBatchMove:
+
+https://docwiki.embarcadero.com/Libraries/Athens/en/FireDAC.Comp.BatchMove.TFDBatchMove.Options
+
+## Conclusão
+
+Melhorar performance nem sempre exige grandes refatorações.
+
+Às vezes, o diferencial está em conhecer melhor as ferramentas que você já utiliza no dia a dia.
+
+Seguimos evoluindo 🚀
+
+---
+
+*Experiência real trabalhando com otimização de sistemas legados em Delphi*
