@@ -63,7 +63,7 @@ const home = {
     <>
       Sou André Vilela, desenvolvedor full stack focado em criar sistemas inteligentes e escaláveis usando React e Node.js.<br />
       Quando não estou programando, ajudo empresas a crescerem através da tecnologia na Tática Júnior.<br />
-      Recentemente participei de eventos de inovação como maratona da MedSenior com SEBRAE e eduHackathon da Beedu.
+      Recentemente participei de eventos de inovação como maratona da MedSenior com SEBRAE e eduHackathon da Beeedu.
     </>
   ),
 };
