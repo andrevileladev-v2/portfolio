@@ -1,0 +1,67 @@
+---
+title: "EasyDelivery — App para Motoboys"
+publishedAt: "2026-03-30"
+images:
+  - "/images/projects/easyDelivery/home.png"
+  - "/images/projects/easyDelivery/dashboard.png"
+  - "/images/projects/easyDelivery/EasyDelivery.gif"
+summary: "App mobile que resolve um problema real de motoboys: importar comandas do WhatsApp, montar a rota otimizada automaticamente e acompanhar os ganhos por região — tudo offline."
+tag: "Mobile"
+link: "https://github.com/andrevileladev-v2/EasyDelivery"
+---
+
+## O Problema
+
+Em uma pizzaria, vi de perto como motoboys recebiam os pedidos: uma mensagem de texto no WhatsApp com o endereço escrito. Sem mapa, sem rota, sem organização. Cada entregador precisava copiar o endereço, abrir o Google Maps manualmente e repetir isso para cada pedido — enquanto os outros iam esfriando.
+
+Com 10 a 15 entregas por dia, o tempo perdido nesse processo era considerável. A solução óbvia era um app, mas o que existia era caro, complexo ou dependia de internet.
+
+## A Solução
+
+O EasyDelivery permite que o motoboy cole o texto das comandas diretamente do WhatsApp ou iFood. O app analisa o texto, identifica os pedidos automaticamente e separa nome, endereço e itens de cada um — sem nenhuma digitação manual.
+
+Com um toque em **Iniciar Rota**, o app calcula a sequência otimizada de entregas e abre o Google Maps com todos os destinos como waypoints. Menos tempo na rua, pedido chegando quente.
+
+<video
+  src="/videos/EasyDelivery.mp4"
+  controls
+  style={{ width: "100%", borderRadius: "12px", marginTop: "1rem" }}
+/>
+
+## Funcionalidades
+
+- **Importação por texto** — cola a comanda e o app extrai tudo automaticamente
+- **Rota otimizada** — ordena as entregas pelo menor percurso e abre no Google Maps
+- **Mapa de calor** — visualiza a concentração de pedidos por região
+- **Ganhos em tempo real** — acompanha a receita do dia e filtra por área
+- **Controle de status** — swipe para marcar entrega como concluída
+- **Estatísticas** — gráficos de desempenho, métodos de pagamento e dias mais movimentados
+- **WhatsApp integration** — envia localização atual para o cliente com um toque
+- **100% offline** — dados salvos localmente, sem depender de internet
+
+## Resultado Real
+
+O app foi distribuído via APK diretamente para os motoboys da pizzaria. Eles usam no dia a dia, com **10 a 15 entregas por dia** registradas. O feedback foi direto: *"o endereço pega certinho no local, diferente de outros apps que usávamos."*
+
+## Stack
+
+| Tecnologia | Uso |
+|---|---|
+| React Native 0.81 + Expo 54 | Framework mobile |
+| TypeScript | Tipagem estática |
+| expo-sqlite | Persistência local offline |
+| expo-location | GPS e geocodificação |
+| react-native-maps | Visualização de mapa |
+| Leaflet + Leaflet.heat | Mapa de calor via WebView |
+| react-native-chart-kit | Gráficos de estatísticas |
+| react-native-gesture-handler | Swipe gestures |
+
+## Decisão de Arquitetura
+
+Optei por **SQLite local e sem backend** intencionalmente. Motoboys em movimento têm conexão instável, e uma solução dependente de servidor seria um ponto de falha. O MVP precisava funcionar sempre, em qualquer condição de rede.
+
+O parser de texto foi o maior desafio técnico: extrair estrutura de mensagens não padronizadas, escritas por atendentes diferentes, com formatações variadas — e acertar o endereço na primeira tentativa.
+
+---
+
+*Projeto desenvolvido como portfólio e entregue gratuitamente para resolver um problema real.*
